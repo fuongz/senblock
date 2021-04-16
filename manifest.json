@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Senblock",
+  "version": "1.0.0",
+  "description": "Block everything you hate!",
+  "short_name": "Senblock",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ],
+
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+
+  "background": {
+    "persistent": true,
+    "scripts": ["app.js"]
+  },
+
+  "browser_action": {
+    "default_title": "Senblock - Block everything you hate!",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    },
+    "default_popup": "popup.html"
+  }
+}
